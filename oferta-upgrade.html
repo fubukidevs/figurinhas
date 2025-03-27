@@ -91,121 +91,30 @@ gtag("config", "GT-K4LJSL7K");
  window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }
 </script>
 
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+<script>
+    window.pixelId = "67e5d32049c66110114aa453";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
 <!-- End Google tag (gtag.js) snippet added by Site Kit -->
 <link rel="https://api.w.org/" href="https://trokajotreinamentos.online/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://trokajotreinamentos.online/wp-json/wp/v2/pages/714" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://trokajotreinamentos.online/xmlrpc.php?rsd" />
 <link rel="canonical" href="https://trokajotreinamentos.online/figurinhas-upgrade/" />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://trokajotreinamentos.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftrokajotreinamentos.online%2Ffigurinhas-upgrade%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://trokajotreinamentos.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftrokajotreinamentos.online%2Ffigurinhas-upgrade%2F&#038;format=xml" />
 <meta name="generator" content="Site Kit by Google 1.148.0" /><!-- HFCM by 99 Robots - Snippet # 1: Pixel - Facebook -->
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1411928283307527');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1411928283307527&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<!-- /end HFCM by 99 Robots -->
-<!-- HFCM by 99 Robots - Snippet # 2: UTMfy -->
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
-<!-- /end HFCM by 99 Robots -->
-<!-- HFCM by 99 Robots - Snippet # 5: Set Cookies -->
-<script>
-(function() {
-    function getParameterByName(name) {
-        const url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        const results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-    function setCookie(name, value, days) {
-        const d = new Date();
-        d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-        const expires = "expires=" + d.toUTCString();
-        document.cookie = name + "=" + value + ";" + expires + ";path=/";
-    }
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    }
-    function captureUTMParameters() {
-        const parameters = [
-            'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
-            'gclid', 'fbclid', 'dclid', 'msclkid', 'referrer'
-        ];
-        parameters.forEach(param => {
-            const paramValue = getParameterByName(param);
-            if (paramValue) {
-                if (param === 'fbclid') {
-                    if (!getCookie('_fbc')) {
-                        const fbcValue = `fb.1.${Math.floor(Date.now() / 1000)}.${paramValue}`;
-                        setCookie('_fbc', fbcValue, 30);
-                    }
-                } else {
-                    setCookie(param, paramValue, 30);
-                }
-            }
-        });
-    }
-    document.addEventListener('DOMContentLoaded', captureUTMParameters);
-})();
-</script>
-<script>
-(function() {
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    }
-    function fillFormFields() {
-        const fields = [
-            'name', 'email', 'phone', 'utm_source', 'utm_medium', 'utm_campaign',
-            'utm_term', 'utm_content', 'gclid', 'fbclid', 'dclid', 'msclkid', 'referrer'
-        ];
-        fields.forEach(field => {
-            const value = getCookie(field);
-            if (value) {
-                const input = document.querySelector(`[id="form-field-${field}"]`);
-                if (input) {
-                    input.value = value;
-                }
-            }
-        });
-    }
-    document.addEventListener('DOMContentLoaded', fillFormFields);
-})();
-</script>
 
-<!-- /end HFCM by 99 Robots -->
-
-		<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:5148975,hjsv:5};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-		</script>
 		<meta name="generator" content="Elementor 3.27.7; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
