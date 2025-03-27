@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headline Vídeos Wistia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Faixa vermelha com cadeado */
+        .exclusive-banner {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .exclusive-banner i {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            text-align: center;
+        }
+
+        .wistia-video {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        wistia-player {
+            width: 100%;
+            height: 450px;
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        wistia-player:not(:defined) {
+            background: #f0f0f0;
+            padding-top: 56.25%;
+        }
+
+        wistia-transcript {
+            display: block;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 4px;
+        }
+
+        .affiliate-link {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .affiliate-link a {
+            color: #ff5f57;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .affiliate-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            wistia-player {
+                height: 250px;
+            }
+            
+            .exclusive-banner {
+                font-size: 1rem;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Faixa vermelha exclusivo -->
+    <div class="exclusive-banner">
+        <i class="fas fa-lock"></i>
+        <span>CONTEÚDO EXCLUSIVO</span>
+    </div>
+
+    <!-- Primeiro Vídeo -->
+    <div class="container">
+        <h1><span class="highlight">REVELADO</span>: Aprenda HOJE na Prática a Ganhar <span class="highlight">1.000 Seguidores Por Dia</span> sem Muito Esforço e Super <span class="highlight">RÁPIDO</span>!</h1>
+
+        <p>Você está pronto para transformar seu Instagram e alcançar o sucesso? Neste vídeo, vamos mostrar um método simples e eficaz para conquistar seguidores rapidamente, sem complicação!</p>
+
+        <div class="wistia-video">
+            <script src="https://fast.wistia.com/player.js" async></script>
+            <script src="https://fast.wistia.com/embed/aiyjebbtvi.js" async type="module"></script>
+            <style>
+                wistia-player[media-id='aiyjebbtvi']:not(:defined) { 
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/aiyjebbtvi/swatch'); 
+                    display: block; 
+                    filter: blur(5px); 
+                    padding-top:56.25%; 
+                }
+            </style>
+            <wistia-player media-id="aiyjebbtvi" aspect="1.7777777777777777"></wistia-player>
+        </div>
+        <wistia-transcript media-id="aiyjebbtvi"></wistia-transcript>
+    </div>
+
+    <!-- Segundo Vídeo -->
+    <div class="container" style="margin-top: 40px;">
+        <h2><span class="highlight">LUCRE</span>: Agora, aprenda o <span class="highlight">PASSO a PASSO</span> de Como Fazer até <span class="highlight">R$10.000 Por Mês</span> com Seu Instagram</h2>
+
+        <p>Descubra o caminho para transformar seu Instagram em uma máquina de lucro. Aprenda estratégias testadas que podem gerar até R$10.000 por mês diretamente da sua conta!</p>
+
+        <div class="wistia-video">
+            <script src="https://fast.wistia.com/player.js" async></script>
+            <script src="https://fast.wistia.com/embed/bc3e5qpks9.js" async type="module"></script>
+            <style>
+                wistia-player[media-id='bc3e5qpks9']:not(:defined) { 
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/bc3e5qpks9/swatch'); 
+                    display: block; 
+                    filter: blur(5px); 
+                    padding-top:56.25%; 
+                }
+            </style>
+            <wistia-player media-id="bc3e5qpks9" aspect="1.7777777777777777"></wistia-player>
+        </div>
+        <wistia-transcript media-id="bc3e5qpks9"></wistia-transcript>
+    </div>
+
+    <!-- Link de Afiliado -->
+    <div class="affiliate-link">
+        <p>Link de Afiliação ao Tok Gringo Citado no VIDEO:<br>
+        <a href="https://bit.ly/4d82uVQ" target="_blank">https://bit.ly/4d82uVQ</a></p>
+    </div>
+
+    <!-- Script de Transcrição -->
+    <script src="https://fast.wistia.net/assets/external/transcript.js" async></script>
+</body>
+</html>
